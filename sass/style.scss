@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+#board {
+    text-align: center;
+    button{
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        background-color: #3bf;
+        color: #fff;
+    }
+    .column-container{
+        display: block;
+        box-shadow: none;
+    }
+    div {
+        display: inline-block;
+        margin: 0 15px;
+        .column {
+            border-left: 3px dotted #3bf;
+            border-right: 3px dotted #3bf;
+            padding: 10px;
+            &>.column-card-list {
+                padding: 0px;
+            }
+            &>.column-card-list>li {
+                box-shadow: 10px 10px 10px #bbb;
+                list-style-type: none;
+                padding: 0px;
+            }
+            &>.column-card-list>li>.card>p {
+                font-style: italic;
+            }
+        }
+    }
+}

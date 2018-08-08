@@ -1,24 +1,38 @@
 * {
-    box-sizing: border-box;
-}
-#board {
-    text-align: center;
+  box-sizing: border-box;
 }
 
-.column {
-    float: left;
-    margin: 0 auto;
+#board {
+  text-align: center;
 }
-button {
-    background-color: lime;
-    border-radius: 12px;
-    border: none;
+#board button {
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #3bf;
+  color: #fff;
 }
-.card {
-    box-shadow: 5px 10px 18px red;
-    border: 1px solid black;
-    margin: 10px auto;
+#board .column-container {
+  display: block;
+  box-shadow: none;
 }
-ul {
-    list-style-type: none;
+#board div {
+  display: inline-block;
+  margin: 0 15px;
+}
+#board div .column {
+  border-left: 3px dotted #3bf;
+  border-right: 3px dotted #3bf;
+  padding: 10px;
+}
+#board div .column > .column-card-list {
+  padding: 0px;
+}
+#board div .column > .column-card-list > li {
+  box-shadow: 10px 10px 10px #bbb;
+  list-style-type: none;
+  padding: 0px;
+}
+#board div .column > .column-card-list > li > .card > p {
+  font-style: italic;
 }
